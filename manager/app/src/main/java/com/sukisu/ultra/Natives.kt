@@ -91,7 +91,7 @@ object Natives {
     }
 
     fun requireNewKernel(): Boolean {
-        return version < MINIMAL_SUPPORTED_KERNEL
+        return false
     }
 
     @Immutable

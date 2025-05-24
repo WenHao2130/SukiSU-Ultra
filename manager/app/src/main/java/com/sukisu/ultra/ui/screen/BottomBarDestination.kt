@@ -20,9 +20,9 @@ enum class BottomBarDestination(
     val iconNotSelected: ImageVector,
     val rootRequired: Boolean,
 ) {
-    Home(HomeScreenDestination, R.string.home, Icons.Filled.Home, Icons.Outlined.Home, false),
-    Kpm(KpmScreenDestination, R.string.kpm_title, Icons.Filled.Token, Icons.Outlined.Token, true),
-    SuperUser(SuperUserScreenDestination, R.string.superuser, Icons.Filled.AdminPanelSettings, Icons.Outlined.AdminPanelSettings, true),
-    Module(ModuleScreenDestination, R.string.module, Icons.Filled.Extension, Icons.Outlined.Extension, true),
+    Home(HomeScreenDestination, R.string.home, Icons.Filled.Home, Icons.Outlined.Home,false),
+    Kpm(KpmScreenDestination, R.string.kpm_title, Icons.Filled.Token, Icons.Outlined.Token, false),
+    SuperUser(SuperUserScreenDestination, R.string.superuser, Icons.Filled.AdminPanelSettings, Icons.Outlined.AdminPanelSettings, false),
+    Module(ModuleScreenDestination, R.string.module, Icons.Filled.Extension, Icons.Outlined.Extension, false),
     Settings(SettingScreenDestination, R.string.settings, Icons.Filled.Settings, Icons.Outlined.Settings, false),
 }

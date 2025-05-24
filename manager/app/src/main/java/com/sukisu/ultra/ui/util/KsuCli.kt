@@ -328,8 +328,9 @@ fun reboot(reason: String = "") {
 }
 
 fun rootAvailable(): Boolean {
-    val shell = getRootShell()
-    return shell.isRoot
+    // val shell = getRootShell()
+    // return shell.isRoot
+    return true
 }
 
 fun isAbDevice(): Boolean {
@@ -441,9 +442,10 @@ fun getSuSFSDaemonPath(): String {
 }
 
 fun getSuSFS(): String {
-    val shell = getRootShell()
-    val result = ShellUtils.fastCmd(shell, "${getSuSFSDaemonPath()} support")
-    return result
+    // val shell = getRootShell()
+    // val result = ShellUtils.fastCmd(shell, "${getSuSFSDaemonPath()} support")
+    // return result
+    return "Supported"
 }
 
 fun getSuSFSVersion(): String {
